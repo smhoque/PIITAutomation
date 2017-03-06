@@ -18,7 +18,7 @@ public class FaceBookSerch extends CommonApi {
         driver.findElement(By.id("email")).sendKeys("emdad.ripon");
         driver.findElement(By.id("pass")).sendKeys("$Ctg1025");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("html/body/div[1]/div[1]/div/div/div/div/div[2]/form/table/tbody/tr[2]/td[3]/label/input")).click();
+        driver.findElement(By.xpath("//input[@type='submit']")).click();
 
     }
     @Test
@@ -28,5 +28,22 @@ public class FaceBookSerch extends CommonApi {
         for(WebElement web:elements){
             System.out.println(web.getTagName()+":" +web.getText());
         }
+
+    }
+
+    @Test
+    public void searchName() throws  Exception{
+
+
+        System.out.println(driver.getCurrentUrl());
+        driver.findElement(By.id("email")).sendKeys("emdad.ripon");
+        driver.findElement(By.id("pass")).sendKeys("$Ctg1025");
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//input[@type='submit']")).click();
+
+
+        driver.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div/div[2]/div[1]/div/div/div/div/div/div/div[1]/ul/li/a/div/span")).click();
+       // driver.findElement(By.xpath("html/body/div[1]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div[1]/div/div[3]/div/div[2]/div[2]/div/div/a[3]")).click();
+
     }
 }

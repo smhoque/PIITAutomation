@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Home.PIITpageTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 2.531 sec <<< FAILURE!
-setUp(Home.PIITpageTest)  Time elapsed: 2.149 sec  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 7.396 sec <<< FAILURE!
+setUp(Home.PIITpageTest)  Time elapsed: 7.026 sec  <<< FAILURE!
 org.testng.TestNGException: 
 Parameter 'url' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
 
